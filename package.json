@@ -10,18 +10,30 @@
     "superstart": "1.0.0",
     "supertest": "^6.3.1"
   },
-  "name": "express-mongodb",
+  "name": "cs372project",
+  "description": "deploy to vercel",
   "version": "1.0.0",
   "main": "signup-express.js",
   "scripts": {
-    "start": "node signup-express.js",
+    "start": "node signup-express.js"
     "test": "mocha ./test --recursive --timeout 15000 --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CS372-Project/CS372Project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+
+
+  "bugs": {
+    "url": "https://github.com/CS372-Project/CS372Project/issues"
+  },
+  "homepage": "https://github.com/CS372-Project/CS372Project#readme"
+
   "directories": {
     "test": "test"
   },
-  "description": ""
+
 }
