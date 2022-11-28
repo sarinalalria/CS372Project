@@ -6,9 +6,7 @@ const path = require('path');
 
 router.use(express.static('../HTML'))
 
-router.get('/signup', function(req, res) {
-    res.sendFile('signup.html');
-});
+
 
 
   
