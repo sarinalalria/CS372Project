@@ -9,6 +9,8 @@ dotenv.config({ path: './.env' });
 const url = process.env.url;
 
 const home = require("./routes/home");
+const signup = require("./routes/signup");
+const login = require("./routes/login");
 
 const port = process.env.PORT || 3000
 
@@ -95,4 +97,6 @@ app.post("/login", function (req, res) {
 
 
 app.use("/", home);
+app.use("/signup", home);
+app.use("/login", home);
 
