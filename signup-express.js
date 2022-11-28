@@ -95,7 +95,7 @@ app.post("/login", function (req, res) {
 });
 
 
+app.get('/signup', function(req, res) {
+    res.sendFile(path.join(__dirname, '../signup.html'));
+});
 
-app.use("/", home);
-app.use("/signup", signup);
-app.use("/login", login);
