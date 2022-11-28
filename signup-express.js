@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
-const path = require('path');
+
 const dotenv = require('dotenv');
 dotenv.config({ path: './.env' });
 
@@ -98,4 +98,7 @@ app.post("/login", function (req, res) {
 app.get('/signup', function(req, res) {
     res.sendFile(path.join(__dirname, '../signup.html'));
 });
+
+
+app.use("/", home);
 
