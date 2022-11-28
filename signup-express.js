@@ -33,6 +33,7 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
 
 
 app.use(express.static('HTML'));
+app.use(express.static(__dirname + '/HTML'));
 const User = require('./models/user');
 const e = require('express');
 
@@ -96,7 +97,7 @@ app.post("/login", function (req, res) {
 
 
 app.get('/signup', function(req, res) {
-    res.sendFile(path.join(__dirname, '../signup.html'));
+    res.sendFile('/signup.html');
 });
 
 
