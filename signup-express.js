@@ -96,18 +96,3 @@ app.post("/login", function (req, res) {
 
 app.use("/", home);
 
-app.get("/signup", function (req, res) {
-    res.set({
-        'Access-control-Allow-Origin': '*'
-    });
-    return res.redirect('signup.html');
-
-});
-
-app.get("/login", function (req, res) {
-    res.set({
-        'Access-control-Allow-Origin': '*'
-    });
-    return res.redirect('login.html');
-
-});
