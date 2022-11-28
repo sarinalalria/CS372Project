@@ -8,6 +8,7 @@ dotenv.config({ path: './.env' });
 
 const url = process.env.url;
 
+const home = require("./routes/home");
 
 const port = process.env.PORT || 3000
 
@@ -93,14 +94,7 @@ app.post("/login", function (req, res) {
 
 
 
-app.get("/", function (req, res) {
-    res.set({
-        'Access-control-Allow-Origin': '*'
-    });
-    return res.redirect('index.html');
-
-});
-
+app.use("/", home);
 
 app.get("/signup", function (req, res) {
     res.set({
