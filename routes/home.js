@@ -3,7 +3,7 @@ const router = express.Router();
 const path = require('path');
 
 
-app.use(express.static('../HTML'))
+router.use(express.static('../HTML'))
 
 router.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '../index.html'));
