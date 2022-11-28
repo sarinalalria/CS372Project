@@ -5,8 +5,6 @@ router.use(express.static('../CS372Project'))
 
 router.use(express.static('../HTML'))
 
-router.use(express.static('HTML'));
-
 const path = require('path');
 
 router.get('/', function(req, res) {
