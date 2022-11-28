@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 
 const dotenv = require('dotenv');
 dotenv.config({ path: './.env' });
-
+const path = require('path');
 const url = process.env.url;
 
 const home = require("./routes/home");
