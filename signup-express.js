@@ -96,13 +96,9 @@ app.post("/login", function (req, res) {
 });
 
 
-app.use(express.static(path.join(__dirname, 'HTML')));
 
-app.get('/signup', function(req, res) {
-    res.sendFile('HTML/signup.html');
-});
 
 
 app.use("/", home);
-
+app.use("/signup", home)
 
