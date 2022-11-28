@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
 });
   
 router.get('/signup', function(req, res) {
-    res.sendFile(path.join(__dirname, '../signup.html'));
+    res.sendFile(path.join(express.static(__dirname), '../signup.html'));
 });
 
 router.get('/login', function(req, res) {
