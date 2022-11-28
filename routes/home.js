@@ -1,11 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-router.use(express.static('../CS372Project'))
-
-router.use(express.static('../HTML'))
-
-router.use(express.static('../HTML/CSS'))
 
 const path = require('path');
 
