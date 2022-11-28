@@ -9,7 +9,7 @@ router.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '../index.html'));
 });
   
-app.get("/signup", function (req, res) {
+router.get("/signup", function (req, res) {
     res.set({
         'Access-control-Allow-Origin': '*'
     });
