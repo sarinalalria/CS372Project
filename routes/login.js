@@ -4,9 +4,10 @@ const router = express.Router();
 
 const path = require('path');
 
+app.use(express.static('../HTML'))
 
 router.get('/login', function(req, res) {
-    res.sendFile(path.join(__dirname, '../HTML/login.html'));
+    res.sendFile(path.join(__dirname, '../login.html'));
 });
   
 

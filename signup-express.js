@@ -97,6 +97,6 @@ app.post("/login", function (req, res) {
 
 
 app.use("/", home);
-app.use("/signup", home);
-app.use("/login", home);
+app.use("/signup", signup);
+app.use("/login", login);
 
