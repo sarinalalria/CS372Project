@@ -96,10 +96,9 @@ app.post("/login", function (req, res) {
 });
 
 
-app.get('/signup', function(req, res) {
-    res.sendFile('/signup.html');
-});
+
 
 
 app.use("/", home);
+app.use("/signup", home);
 
